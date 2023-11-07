@@ -1,0 +1,18 @@
+trigger:
+- '*'
+
+pool:
+  vmImage: 'ubuntu-latest'  # Choose an appropriate image for your needs
+
+steps:
+- script: |
+    #!/bin/bash
+    # Your shell script commands go here
+    echo "Hello from the shell script"
+    # You can run more commands here
+
+    # For example, running a shell script file from the repository:
+    # chmod +x ./path/to/your/script.sh
+    # ./path/to/your/script.sh
+
+  displayName: 'Run Shell Script'
